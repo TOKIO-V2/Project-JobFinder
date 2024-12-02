@@ -19,18 +19,18 @@
                 <tr>
                     <th>{{ $offer->id }}</th>
                     <td>{{ $offer->created_at }}</td>
-                    <td>{{ $offer->lastestProgress->updated_at ?? "There's no progress yet" }}</td>
+                    <td>{{ $offer->lastestStatus->updated_at ?? "There's no info yet" }}</td>
                     <td>{{ $offer->title }}</td>
                     <td>{{ $offer->company }}</td>
                     <td>
                         <a href="{{ $offer->url }}" target="_blank">Link to the offer</a>
                     </td>
-                    <td>{{ $offer->status }}</td>
-                    <td>
-                        <a href="{{ route('showDetail', ['id' => $offer->id]) }}">
+                    <td>{{ $offer->offerStatus }}</td>
+                   <td>
+                        <a href="{{ route('showStatusDetail', ['id' => $offer->id]) }}">
                             <button type="button" class="btn btn-warning">Details</button>
-                        </a>
-                    </td>
+                        </a> 
+                    </td> 
                 </tr>
             @endforeach
         </tbody>

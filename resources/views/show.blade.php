@@ -9,11 +9,11 @@
         </div>
         <div>
             <a href="{{ $offer->url }}">Link to the offer</a>
-            <p>{{ $offer->status }}</p>
+            <p>{{ $offer->StatusCompany }}</p>
         </div>
     </div>
 
-    <div class="offerProgress">
+    <div class="offerStatus">
         <table class="table table-bordered container" id="table">
             <thead>
                 <tr>
@@ -23,12 +23,12 @@
                 </tr>
             </thead>
             <tbody>
-                @if (!($offer->progresses)->isEmpty())
-                    @foreach ($offer->progresses as $progress)
+                @if (!$offer->StatusCompany->isEmpty())
+                    @foreach ($offer->Statuscompany as $StatusCompany)
                         <tr>
-                            <td>{{ $progress->id }}</td>
-                            <td>{{ $progress->created_at }}</td>
-                            <td>{{ $progress->comment }}</td>
+                            <td>{{ $StatusCompany->id }}</td>
+                            <td>{{ $Statuscompany->created_at }}</td>
+                            <td>{{ $StatusCompany->comment }}</td>
                         </tr>
                     @endforeach
                 @else
