@@ -1,0 +1,28 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #E4E3DF;
+    min-height: 15vh;
+    align-items: center;
+    font-family: "Delius", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3vh;
+    flex-wrap: wrap;
+    gap:5vh;
+    padding: 1rem;
+}
+
+.socials, .githubSocials{
+    display: flex;
+    gap: 5vh;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.5s ease;
+}
+
+footer a:hover{
+    transform: scale(1.2);
+}
