@@ -23,12 +23,12 @@
                 </tr>
             </thead>
             <tbody>
-                @if (!($offer->progresses)->isEmpty())
-                    @foreach ($offer->progresses as $progress)
+                @if (!($offer->status)->isEmpty())
+                    @foreach ($offer->status as $status)
                         <tr>
-                            <td>{{ $progress->id }}</td>
-                            <td>{{ $progress->created_at }}</td>
-                            <td>{{ $progress->comment }}</td>
+                            <td>{{ $status->id }}</td>
+                            <td>{{ $status->created_at }}</td>
+                            <td>{{ $status->comment }}</td>
                         </tr>
                     @endforeach
                 @else

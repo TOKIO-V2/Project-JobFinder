@@ -6,7 +6,7 @@ use App\Http\Controllers\OfferController;
 use App\Http\Controllers\StatusController;
 
 Route::get('/', [OfferController::class, 'index' ])->name('homeOffer');
-Route::get('/journals/{id}', [OfferController::class, 'show'])->name('showOfferDetail');
+Route::get('/offer/{id}', [OfferController::class, 'show'])->name('showOfferDetail');
 
 Route::get('/', [StatusController::class, 'index' ])->name('homeStatus');
-Route::get('/journals/{id}', [StatusController::class, 'show'])->name('showStatusDetail');
+Route::get('/status/{id}', [StatusController::class, 'show'])->name('showStatusDetail');
