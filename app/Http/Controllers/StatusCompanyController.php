@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Status;
+use App\Models\StatusCompany;
 use Illuminate\Http\Request;
 
-class StatusController extends Controller
+class StatusCompanyController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $status = Status::all();
+        $status = StatusCompany::all();
         foreach($status as $status){
             $entry = substr($status->entry, 0, 80);
             $status->entry = $entry;
@@ -42,7 +42,7 @@ class StatusController extends Controller
      */
     public function show(string $id)
     {
-        $status = Status::find($id);
+        $status = StatusCompany::find($id);
         return view('show', compact('status'));
     }
 

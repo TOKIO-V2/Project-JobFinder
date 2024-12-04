@@ -4,16 +4,16 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Status;
+use App\Models\StatusCompany;
 
-class StatusController extends Controller
+class StatusCompanyController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $status = Status::all();
+        $status = StatusCompany::all();
         return response()->json($status, 200);
     }
 
@@ -30,7 +30,7 @@ class StatusController extends Controller
      */
     public function store(Request $request)
     {
-        $status = Status::create([
+        $status = StatusCompany::create([
             'entry' => $request->entry,
             'status' => $request->status
         ]);
@@ -43,7 +43,7 @@ class StatusController extends Controller
      */
     public function show(string $id)
     {
-        $status = Status::find($id);
+        $status = StatusCompany::find($id);
         return response()->json($status, 200);
     }
 
@@ -60,7 +60,7 @@ class StatusController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $status = Status::find($id);
+        $status = StatusCompany::find($id);
 
         $status->update([
             'entry' => $request->entry,
@@ -75,7 +75,7 @@ class StatusController extends Controller
      */
     public function destroy(string $id)
     {
-        $status = Status::find($id);
+        $status = StatusCompany::find($id);
         $status->delete();
     }
 }

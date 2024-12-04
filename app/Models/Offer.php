@@ -19,7 +19,11 @@ class Offer extends Model
     ];
 
     public function progresses(): HasMany {
-        return $this->hasMany(Status::class, 'id_offer');
+        return $this->hasMany(StatusCompany::class, 'id_offer');
+    }
+
+    public function lastestStatus() {
+        return $this->hasOne(StatusCompany::class, 'id_offer')->latestOfMany();
     }
 
 }

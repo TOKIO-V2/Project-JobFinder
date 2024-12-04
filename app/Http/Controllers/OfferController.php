@@ -13,11 +13,7 @@ class OfferController extends Controller
      */
     public function index()
     {
-        $offer = Offer::all();
-        foreach($offer as $offer){
-            $entry = substr($offer->entry, 0, 80);
-            $offer->entry = $entry;
-        }
+        $offers = Offer::with('lastestStatus')->get();
         return view('home', compact('offers'));
     }
 
