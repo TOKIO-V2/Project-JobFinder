@@ -31,8 +31,11 @@ class OfferController extends Controller
     public function store(Request $request)
     {
         $offer = Offer::create([
-            'entry' => $request->entry,
-            'offer' => $request->offer
+            'title' => $request->title,
+            'url' => $request->url,
+            'company' => $request->company,
+            'offerStatus' => $request->offerStatus,
+            'location' => $request->location,
         ]);
         $offer->save();
         return response()->json($offer, 200);
@@ -63,8 +66,11 @@ class OfferController extends Controller
         $offer = Offer::find($id);
 
         $offer->update([
-            'entry' => $request->entry,
-            'offer' => $request->offer
+            'title' => $request->title,
+            'url' => $request->url,
+            'company' => $request->company,
+            'offerStatus' => $request->offerStatus,
+            'location' => $request->location,
         ]);
         $offer->save();
         return response()->json($offer, 200);

@@ -38,7 +38,7 @@ class OfferController extends Controller
      */
     public function show(string $id)
     {
-        $offer = Offer::find($id);
+        $offer = Offer::with('statusses')->find($id);
         return view('show', compact('offer'));
     }
 

@@ -18,7 +18,7 @@ class Offer extends Model
         'offerStatus'
     ];
 
-    public function progresses(): HasMany {
+    public function statusses(): HasMany {
         return $this->hasMany(StatusCompany::class, 'id_offer');
     }
 

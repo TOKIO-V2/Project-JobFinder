@@ -31,8 +31,8 @@ class StatusCompanyController extends Controller
     public function store(Request $request)
     {
         $status = StatusCompany::create([
-            'entry' => $request->entry,
-            'status' => $request->status
+            'id_offer' => $request->id_offer,
+            'comentary' => $request->comentary,
         ]);
         $status->save();
         return response()->json($status, 200);
@@ -63,8 +63,8 @@ class StatusCompanyController extends Controller
         $status = StatusCompany::find($id);
 
         $status->update([
-            'entry' => $request->entry,
-            'status' => $request->status
+            'id_offer' => $request->id_offer,
+            'comentary' => $request->comentary,
         ]);
         $status->save();
         return response()->json($status, 200);

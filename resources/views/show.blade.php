@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <a href="{{ route('home') }}" class="btn btn-secondary">Back</a>
+    <a href="{{ route('homeOffer') }}" class="btn btn-secondary">Back</a>
     <div class="offerInfo">
         <div>
             <h3>{{ $offer->title }}</h3>
@@ -23,12 +23,12 @@
                 </tr>
             </thead>
             <tbody>
-                @if (!$offer->StatusCompany->isEmpty())
-                    @foreach ($offer->Statuscompany as $StatusCompany)
+                @if (!($offer->statusses)->isEmpty())
+                    @foreach ($offer->statusses as $StatusCompany)
                         <tr>
                             <td>{{ $StatusCompany->id }}</td>
-                            <td>{{ $Statuscompany->created_at }}</td>
-                            <td>{{ $StatusCompany->comment }}</td>
+                            <td>{{ $StatusCompany->created_at }}</td>
+                            <td>{{ $StatusCompany->comentary }}</td>
                         </tr>
                     @endforeach
                 @else
