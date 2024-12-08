@@ -4,7 +4,7 @@
     <table class="table table-bordered container" id="table">
         <thead>
             <tr>
-                <th scope="col" id="headerTable">#</th>
+                <th scope="col" id="headerTable">ID</th>
                 <th scope="col" id="headerTable">Date</th>
                 <th scope="col" id="headerTable">Last Update</th>
                 <th scope="col" id="headerTable">Title</th>

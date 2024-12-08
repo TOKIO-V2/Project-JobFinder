@@ -6,4 +6,5 @@
     <div class="githubSocials">
         <a href="https://github.com/TOKIO-V2" target="_blank"><img src="{{ asset('img/socials/gitHubLogo.png') }}" alt="GitHub's logo" width="50px">Alberto</a>
     </div>
+    <p class="copyright"><b>©Copyright. All right reserved for Alberto Hernández Galeote</b></p>
 </footer>

@@ -1,7 +1,7 @@
 footer{
     display: flex;
     justify-content: space-around;
-    background-color: #E4E3DF;
+    background-color: #0d1b2a;
     min-height: 15vh;
     align-items: center;
     font-family: "Delius", cursive;
@@ -13,16 +13,24 @@ footer{
     padding: 1rem;
 }
 
+.helpLinks{
+    display: flex;
+    flex-direction: column;
+}
 .socials, .githubSocials{
     display: flex;
     gap: 5vh;
 }
 footer a {
     text-decoration: none;
-    color: black;
+    color: #e0e1dd;
     transition: transform 0.5s ease;
 }
 
 footer a:hover{
     transform: scale(1.2);
+}
+
+.copyright {
+    color: #e0e1dd;
 }

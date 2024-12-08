@@ -1,3 +1,3 @@
-@import url(header.css);
-@import url(footer.css);
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Delius&family=Dosis:wght@200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

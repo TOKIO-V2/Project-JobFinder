@@ -1,0 +1,9 @@
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4vh;
+    padding: 2rem;
+    
+    background-color: #415a77;
+}
