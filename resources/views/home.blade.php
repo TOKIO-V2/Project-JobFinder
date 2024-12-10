@@ -28,7 +28,7 @@
                     <td>{{ $offer->offerStatus }}</td>
                    <td>
                         <a href="{{ route('showOfferDetail', ['id' => $offer->id]) }}">
-                            <button type="button" class="btn btn-warning">Details</button>
+                            <button type="button" class="buttonStyle">Details</button>
                         </a> 
                     </td> 
                 </tr>

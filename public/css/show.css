@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonStyle2{
+    background-color: #4d7298;
+}
+
+.companyShow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+    margin: 1.3rem;
+}

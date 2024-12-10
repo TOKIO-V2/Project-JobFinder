@@ -1,18 +1,16 @@
 @extends('layout.app')
 
 @section('content')
-    <a href="{{ route('homeOffer') }}" class="btn btn-secondary">Back</a>
     <div class="offerInfo">
         <div>
-            <h3>{{ $offer->title }}</h3>
-            <h5>{{ $offer->company }}</h5>
+            <h3 class="titleShow">{{ $offer->title }}</h3>
+            <h5 class="companyShow">{{ $offer->company }}</h5>
         </div>
         <div>
-            <a href="{{ $offer->url }}">Link to the offer</a>
-            <p>{{ $offer->StatusCompany }}</p>
+            <a href="{{ $offer->url }}" class="linkShow">Link to the offer</a>
+            <p class="statusShow">{{ $offer->StatusCompany }}</p>
         </div>
     </div>
-
     <div class="offerStatus">
         <table class="table table-bordered container" id="table">
             <thead>
@@ -23,7 +21,7 @@
                 </tr>
             </thead>
             <tbody>
-                @if (!($offer->statusses)->isEmpty())
+                @if (!$offer->statusses->isEmpty())
                     @foreach ($offer->statusses as $StatusCompany)
                         <tr>
                             <td>{{ $StatusCompany->id }}</td>
@@ -39,4 +37,6 @@
             </tbody>
         </table>
     </div>
-@endsection
+    <a href="{{route('homeOffer')}}">
+        <button type="button" class="buttonStyle2">Back</button>
+    @endsection
