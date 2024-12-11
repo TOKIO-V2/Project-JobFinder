@@ -5,14 +5,14 @@ main{
     gap: 4vh;
     padding: 2rem;
     
-    background-color: #d0efb1;
+    background-color: #ab81cd;
 }
 
 .buttonStyle{
-    background-color: #4d7298;
+    background-color: #edf2fb;
 }
 
 .table td,th{
-    background-color: #9dc3c2 !important;
+    background-color: #e2adf2 !important;
 }
 

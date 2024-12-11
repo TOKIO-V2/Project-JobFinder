@@ -1,7 +1,7 @@
 footer{
     display: flex;
     justify-content: space-around;
-    background-color: #b3d89c;
+    background-color: #654597;
     min-height: 15vh;
     align-items: center;
     font-family: "Delius", cursive;
@@ -23,7 +23,7 @@ footer{
 }
 footer a {
     text-decoration: none;
-    color: black;
+    color: rgba(255, 255, 255, 0.803);
     transition: transform 0.5s ease;
 }
 
@@ -32,5 +32,5 @@ footer a:hover{
 }
 
 .copyright {
-    color: black;
+    color: rgba(255, 255, 255, 0.803);
 }

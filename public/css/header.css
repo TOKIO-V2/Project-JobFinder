@@ -3,7 +3,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 3vh;
-    background-color: #b3d89c;
+    background-color: #654597;
     padding: 1rem;
     flex-wrap: wrap;
 }
@@ -16,6 +16,6 @@ header h1{
     font-weight: 800;
     font-style: normal;
     font-size: 100px;
-    color: black;
+    color: rgba(255, 255, 255, 0.803);
     
 }
