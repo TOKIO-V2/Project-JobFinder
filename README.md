@@ -3,7 +3,8 @@
 **Welcome to ¡JobFinder!**
 
 
-![JobFinder Home](https://github.com/user-attachments/assets/4fe4c123-0a24-45f5-9313-d071d993881f)
+![JobFinder Home](https://github.com/user-attachments/assets/b78142da-1eff-4cac-b5a1-84ff0fe209a2)
+
 
 
 
@@ -86,9 +87,11 @@ In order to run this project locally, you need:
 In this quick guide you will learn about the main functionalities of my project "Jobfinder":
 
 1. On the main page we can find all the offers to which we have applied. If we want to see the details, you must click on the details button.
-   ![Jobfinder Home](https://github.com/user-attachments/assets/bfd9ee33-62fc-4b56-aceb-06dc2466b19d)
+   ![JobFinder Home](https://github.com/user-attachments/assets/9baf6102-1aa1-424d-bc14-d104abfd8bee)
 
-   ![JobFinder Show](https://github.com/user-attachments/assets/d7af33a4-1aaf-4db5-867b-4b6bea192dde)
+
+   ![JobFinder Show](https://github.com/user-attachments/assets/6d58a8d0-d1c4-497d-8ec4-715ac693ce12)
+
 
 
     - In each offer we will find the date when it was applied, the company to which we applied, the progress in which it is, etc.
